@@ -19,17 +19,16 @@
   }
 }
 
-
 .fade-in {
   animation: fadeIn 0.5s ease-out forwards;
 }
 
-.browser-tab:focus {
+.btn:focus {
   outline: 2px solid var(--custom-primary);
   outline-offset: 2px;
 }
 
-.browser-tab {
+.btn {
   background: var(--custom-light-bg);
   color: var(--custom-text);
   transition: var(--custom-transition);
@@ -37,19 +36,19 @@
   white-space: nowrap;
 }
 
-.browser-tab:hover {
+.btn:hover {
   background: var(--custom-secondary);
   color: var(--custom-text);
   transform: translateY(-1px);
 }
 
-.browser-tab.active {
+.btn.active {
   background: var(--custom-primary);
   color: white;
   box-shadow: var(--custom-shadow);
 }
 
-.browser-tab.active::after {
+.btn.active::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -116,14 +115,6 @@
 }
 
 @media (max-width: 768px) {
-  .fs-7 {
-    font-size: 0.9rem;
-  }
-
-  .fs-8 {
-    font-size: 0.8rem;
-  }
-
   .card-service-item .custom-card-text {
     font-size: 0.8rem;
     text-align: center;
@@ -155,22 +146,6 @@
   background-color: var(--custom-secondary);
   border-color: var(--custom-secondary);
   color: var(--custom-text);
-}
-
-.fs-7 {
-  font-size: 1rem;
-}
-
-.fs-8 {
-  font-size: 0.9rem;
-}
-
-.fs-ultra {
-  font-size: 3rem;
-}
-
-.w-85 {
-  width: 85%;
 }
 
 .card-service-item {
@@ -206,3 +181,5 @@
 .card-back {
   backface-visibility: hidden;
 }
+
+/* Removed custom font sizes and fixed heights */
